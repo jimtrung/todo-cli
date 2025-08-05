@@ -18,7 +18,7 @@ func main() {
 
 	todos, err := storage.LoadTodos()
 	if err != nil {
-		log.Fatalf("Failed to load the data: %w", err)
+		log.Fatalf("Failed to load the data: %v", err)
 	}
 
 	m := ui.Model{
